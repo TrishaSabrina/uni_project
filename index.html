@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Project</title>
+    <style>
+      body {
+        background: url("https://i0.wp.com/picjumbo.com/wp-content/uploads/natural-background-with-empty-wooden-table-free-image.jpeg?w=600&quality=80");
+        background-size: cover;
+      }
+      .image1 {
+        transform: scale(0.8) rotate(140deg);
+        margin: 70px;
+      }
+      .image2 {
+        transform: rotate(65deg) scale(1.9);
+        width: 200px;
+      }
+      .image3 {
+        transform: translateX(95px) rotate(-30deg) scale(1.5);
+        width: 200px;
+      }
+      .image4 {
+        transform: translateY(-200px) scale(1.7) rotate(40deg) translateX(200px);
+        width: 200px;
+      }
+      ul {
+        list-style-type: none;
+
+        padding: 5px 1px;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      li {
+        float: left;
+        border-right: 1px solid #bbb;
+      }
+
+      li:last-child {
+        border-right: none;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover:not(.active) {
+        background-color: #111;
+      }
+
+      .active {
+        background-color: #036d21;
+      }
+
+      .item {
+        display: flex;
+        align-items: center;
+      }
+      .right {
+        flex-direction: row-reverse;
+      }
+      .left {
+        flex-direction: row;
+      }
+
+      .para {
+        display: flex;
+        padding-right: 20px;
+        margin: 15px;
+        line-height: 25px;
+        font-weight: bold;
+        font-size: 15px;
+        font-family: cursive;
+        text-align: justify;
+      }
+    </style>
+  </head>
+  <body>
+    <h1
+      style="
+        color: rgb(6, 248, 14);
+
+        text-align: center;
+        border: 5px solid rgb(218, 251, 226);
+        border-width: 5px;
+        margin: 10px 300px;
+        font-family: cursive;
+        font-size: 3em;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        background-color: rgba(126, 204, 134, 0.903);
+        border-radius: 10px 100px / 120px;
+      "
+    >
+      Green World
+    </h1>
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#news">About</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+      <li style="float: right"><a class="active" href="#about">Buy Here</a></li>
+    </ul>
+    <img
+      class="image1"
+      src="https://c0.wallpaperflare.com/preview/418/314/467/rose-rosewood-rose-tree-red-thumbnail.jpg"
+      alt=""
+    />
+    <img
+      class="image2"
+      src="https://images.ctfassets.net/zma7thmmcinb/77bjK1XNBdSXAYihMTlgVr/b7b2b1c7a5a16b1bb1d7460d8ace4ce3/marigold-seeds-pv.jpg"
+      alt=""
+    />
+    <img
+      class="image3"
+      src="https://images.picxy.com/cache/2020/9/28/2cec0e4f4d38b68a45587341a6467630.jpg"
+      alt=""
+    />
+    <img
+      class="image4"
+      src="https://thumbnails.yayimages.com/1600/10/d74/10d74fea.jpg"
+      alt=""
+    />
+    <h1
+      style="
+        color: white;
+        margin: 250px;
+        text-align: left;
+        font-family: cursive;
+      "
+    >
+      Hello! Plant Enthusiasts, here you can buy various seeds of unique
+      flowers...
+    </h1>
+    <h1 style="text-align: center; color: white">Our Most Popular Seed</h1>
+    <div class="item left">
+      <img
+        style="
+          margin: 20px;
+          border-radius: 10px;
+          border: 5px solid rgb(240, 252, 6);
+        "
+        src="https://live.staticflickr.com/3513/3880199640_749ae5c1a4_b.jpg"
+        alt=""
+        width="500px"
+        height="300px"
+      />
+
+      <div class="para">
+        <p class="item right" style="color: rgb(234, 230, 4)">
+          Tulip Seeds for Planting - Purple Queen Tulip Flowers in Your
+          Garden.This planting packet includes 2 packs of 25 purple tulips
+          seeds.Planting Packets with Instructions – Our colorful planting
+          packets include all the necessary information to grow these flowers
+          successfully. Each packet is 3 in x 4.5 in with a beautiful full color
+          illustration on the front with growing instructions on the back.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
