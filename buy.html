@@ -1,3 +1,12 @@
+<?php
+session_start();
+if (!isset($_SESSION['username'])) {
+    header("Location: login.html");
+    exit();
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -34,6 +43,19 @@
   </head>
   <body>
     <h1 style="text-align: center; color: white">Buy Flower Seeds</h1>
+    <a
+      href="logout.php"
+      style="
+        font-family: cursive;
+        padding: 10px;
+        background-color: #4caf50;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-left: 1190px;
+      "
+      >Logout</a
+    >
     <div class="item left">
       <img
         style="
@@ -99,7 +121,7 @@
     </div>
     <button
       style="
-        margin-left: 805px;
+        margin-left: 1140px;
         padding: 5px 10px;
         background-color: #b0ffad;
         color: rgb(7, 7, 7);

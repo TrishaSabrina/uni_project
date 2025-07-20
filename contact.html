@@ -11,25 +11,10 @@
         padding: 25px;
         background-color: #f4f4f4;
       }
-      .contact-form {
-        max-width: 400px;
-        margin: auto;
-        padding: 20px;
-        background: white;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-      .contact-form input,
-      .contact-form textarea {
-        width: 90%;
-        padding: 10px;
-        margin: 10px 0;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-weight: bold;
-        font-family: cursive;
-      }
-      .contact-form button {
+
+      button {
+        display: block;
+        margin: 10px auto;
         padding: 10px;
         color: white;
         background-color: #356c33;
@@ -37,10 +22,12 @@
         border-radius: 5px;
         cursor: pointer;
         font-family: cursive;
+        padding: 20px 45px;
       }
-      .contact-form button:hover {
-        background-color: #0056b3;
+      a {
+        text-decoration: none;
       }
+
       h1 {
         text-align: center;
         background-color: #4caf50;
@@ -50,41 +37,23 @@
         font-family: cursive;
         font-size: larger;
       }
+      p {
+        text-align: center;
+        font-family: cursive;
+        color: rgb(8, 8, 8);
+        font-size: larger;
+      }
     </style>
   </head>
   <body>
     <h1>Contact Us</h1>
-    <div class="contact-form">
-      <form>
-        <label for="name">Name:</label>
-        <input
-          type="text"
-          id="name"
-          name="name"
-          required
-          placeholder="Enter your name"
-        />
-
-        <label for="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          required
-          placeholder="Enter Your Email"
-        />
-
-        <label for="message">Message:</label>
-        <textarea
-          id="message"
-          name="message"
-          rows="4"
-          required
-          placeholder="Tell us about your query"
-        ></textarea>
-
-        <button type="submit">Submit</button>
-      </form>
+    <div>
+      <p>Contact Us here..</p>
+      <a
+        href="https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=9199bf20-a13f-4107-85dc-02114787ef48&scope=https%3A%2F%2Foutlook.office.com%2F.default%20openid%20profile%20offline_access&redirect_uri=https%3A%2F%2Foutlook.live.com%2Fmail%2F&client-request-id=c7b75d02-0bc1-4267-5c80-df9b6461c7e1&response_mode=fragment&client_info=1&prompt=select_account&nonce=01982408-6556-7694-8415-bf819f5e2d42&state=eyJpZCI6IjAxOTgyNDA4LTY1NTUtNzNhMy05YzZjLTY3MWRhOTVkZTU0OCIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoicmVkaXJlY3QifX0%3D&claims=%7B%22access_token%22%3A%7B%22xms_cc%22%3A%7B%22values%22%3A%5B%22CP1%22%5D%7D%7D%7D&x-client-SKU=msal.js.browser&x-client-VER=4.12.0&response_type=code&code_challenge=RbZuiY9jR52xT0A_O3r3eYXyBfmU-B6YM_hifnLLLz0&code_challenge_method=S256&cobrandid=ab0455a0-8d03-46b9-b18b-df2f57b9e44c&fl=dob,flname,wld&sso_reload=true"
+        target="_blank"
+        ><button type="submit">Send Email</button></a
+      >
     </div>
   </body>
 </html>

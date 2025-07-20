@@ -11,14 +11,6 @@
         background-size: cover;
       }
 
-      form {
-        display: inline-block;
-        text-align: left;
-        border: 3px solid black;
-        padding: 20px;
-        margin: 0px 10px 50px 382px;
-        background-color: white;
-      }
       label {
         display: block;
         margin: 10px 0 5px 0;
@@ -53,21 +45,40 @@
         font-family: cursive;
         color: rgb(8, 8, 8);
       }
+      .login-form {
+        max-width: 300px;
+        margin: auto;
+        padding: 20px;
+        background: white;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .login-form input,
+      .login-form textarea {
+        width: 90%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-weight: bold;
+        font-family: cursive;
+      }
     </style>
   </head>
   <body>
     <h1>Login Page</h1>
-    <form>
-      <label for="username">Username:</label>
-      <input type="text" id="username" name="username" required />
+    <div class="login-form">
+      <form action="./login.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required />
 
-      <label for="password">Password:</label>
-      <input type="password" id="password" name="password" required />
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
 
-      <input type="submit" value="Login" />
-      <p>No account? <a href="./register.html">Sign Up</a></p>
-    </form>
-
+        <input type="submit" value="Login" />
+        <p>No account? <a href="./sign.html">Sign Up</a></p>
+      </form>
+    </div>
     <script src="./src/script.js"></script>
   </body>
 </html>
